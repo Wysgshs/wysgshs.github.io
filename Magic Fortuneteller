@@ -1,0 +1,12 @@
+let btn = document.getElementById("btn");
+let output = document.getElementById("output");
+let quote =['Today will be a good day', 'You should run and hide', 'Stay in bed', 'The future is hazy'
+
+];
+let quote2 = [' there is always tomorrow.', ' it could get better.', ' it could get worse.', ' giving up is always an option.'
+    
+];
+btn.addEventListener('click', function(){
+    var randomQuote = quote[Math.floor(Math.random() * quote.length)] + ' but, ' + quote2[Math.floor(Math.random() *quote2.length)];
+    output.innerHTML = randomQuote;
+});
